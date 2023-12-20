@@ -5,6 +5,14 @@
   </Languages>
   <Texts>
     <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_3N90" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Previous</Translation>
+      </Text>
+      <Text Id="__SingleUse_HS3R" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Next</Translation>
+      </Text>
+    </TextGroup>
   </Texts>
   <Typographies>
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />

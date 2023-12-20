@@ -5,17 +5,165 @@
         "Name": "Screen1",
         "Components": [
           {
-            "Type": "Box",
-            "Name": "box1",
+            "Type": "Image",
+            "Name": "background",
             "Width": 480,
             "Height": 272,
-            "Color": {
-              "Green": 104,
-              "Blue": 250
-            }
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "top_bar",
+            "Width": 480,
+            "Height": 36,
+            "RelativeFilename": "top_bar.png"
+          },
+          {
+            "Type": "AnimatedImage",
+            "Name": "animatedLogo",
+            "X": 20,
+            "Y": 140,
+            "Width": 85,
+            "Height": 112,
+            "FileNameFirst": "ani_01.png",
+            "FileNameLast": "ani_11.png",
+            "UpdateTicksInterval": 100,
+            "StartOnLoad": true,
+            "LoopEnabled": true
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "buttonTransition",
+            "X": 300,
+            "Y": 190,
+            "Width": 146,
+            "Height": 70,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 9,
+                "TextId": "__SingleUse_HS3R",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "button_large_released.png",
+                "ImagePressed": "button_large_pressed.png"
+              }
+            ]
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "GoToScreen2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonTransition"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen2"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen2",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "background",
+            "Width": 480,
+            "Height": 272,
+            "RelativeFilename": "background.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "top_bar",
+            "Width": 480,
+            "Height": 36,
+            "RelativeFilename": "top_bar.png"
+          },
+          {
+            "Type": "AnimatedImage",
+            "Name": "animatedLogo",
+            "X": 20,
+            "Y": 140,
+            "Width": 85,
+            "Height": 112,
+            "FileNameFirst": "ani_01.png",
+            "FileNameLast": "ani_11.png",
+            "UpdateTicksInterval": 100,
+            "StartOnLoad": true,
+            "LoopEnabled": true
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "buttonTransition",
+            "X": 299,
+            "Y": 189,
+            "Width": 146,
+            "Height": 70,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 9,
+                "TextId": "__SingleUse_3N90",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "button_large_released.png",
+                "ImagePressed": "button_large_pressed.png"
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "GoToScreen1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonTransition"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Screen1"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [],
