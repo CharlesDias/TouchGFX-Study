@@ -180,6 +180,125 @@
                 "ImagePressed": "button_large_pressed.png"
               }
             ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "SWButtonHWLED",
+            "X": 40,
+            "Y": 45,
+            "Width": 80,
+            "Height": 84,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 23,
+                "TextId": "__SingleUse_F0IR",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "button_round_released.png",
+                "ImagePressed": "button_round_pressed.png"
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "SWButtonSWLED",
+            "X": 360,
+            "Y": 45,
+            "Width": 80,
+            "Height": 84,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 23,
+                "TextId": "__SingleUse_G4RF",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "button_round_released.png",
+                "ImagePressed": "button_round_pressed.png"
+              }
+            ]
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textPhysLED",
+            "X": 30,
+            "Y": 120,
+            "Width": 101,
+            "Height": 12,
+            "TextId": "__SingleUse_XH6S",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 200,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textLogLED",
+            "X": 352,
+            "Y": 120,
+            "Width": 96,
+            "Height": 12,
+            "TextId": "__SingleUse_WHL7",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 200,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "Image",
+            "Name": "SwLedOff",
+            "X": 154,
+            "Y": 30,
+            "Width": 172,
+            "Height": 114,
+            "RelativeFilename": "led_off.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "SwLedOn",
+            "X": 154,
+            "Y": 30,
+            "Width": 172,
+            "Height": 114,
+            "Visible": false,
+            "RelativeFilename": "led_on.png"
           }
         ],
         "Interactions": [
@@ -194,6 +313,28 @@
               "ScreenTransitionType": "ScreenTransitionCover",
               "ScreenTransitionDirection": "West",
               "ActionComponent": "Screen1"
+            }
+          },
+          {
+            "InteractionName": "SWToggleSwLED",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "SWButtonSWLED"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "presenter->swButtonSwLedToggle();"
+            }
+          },
+          {
+            "InteractionName": "SWToggleHwLED",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "SWButtonHWLED"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "presenter->swButtonHwLedToggle();"
             }
           }
         ]

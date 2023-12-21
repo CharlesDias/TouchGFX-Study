@@ -16,6 +16,7 @@ public:
     }
     
     virtual void newJunctionTempValue(int value) {}
+    virtual void userButtonPressed() {}
 protected:
     Model* model;
 };

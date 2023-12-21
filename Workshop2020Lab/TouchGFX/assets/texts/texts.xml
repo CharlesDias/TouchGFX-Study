@@ -6,6 +6,18 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_WHL7" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Toggle Logical LED</Translation>
+      </Text>
+      <Text Id="__SingleUse_XH6S" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Toggle Physical LED</Translation>
+      </Text>
+      <Text Id="__SingleUse_G4RF" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">SW</Translation>
+      </Text>
+      <Text Id="__SingleUse_F0IR" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">HW</Translation>
+      </Text>
       <Text Id="__SingleUse_84I2" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Junction Temperature</Translation>
       </Text>

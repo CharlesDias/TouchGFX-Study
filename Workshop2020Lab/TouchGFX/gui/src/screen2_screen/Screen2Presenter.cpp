@@ -16,3 +16,18 @@ void Screen2Presenter::deactivate()
 {
 
 }
+
+void Screen2Presenter::swButtonHwLedToggle()
+{
+	model->toggleHwLed();
+}
+
+void Screen2Presenter::swButtonSwLedToggle()
+{
+	view.toggleSwLed();
+}
+
+void Screen2Presenter::userButtonPressed()
+{
+	view.toggleSwLed();
+}

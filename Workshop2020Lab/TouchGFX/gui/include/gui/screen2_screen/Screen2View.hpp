@@ -11,6 +11,8 @@ public:
     virtual ~Screen2View() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+
+    void toggleSwLed();
 protected:
 };
 

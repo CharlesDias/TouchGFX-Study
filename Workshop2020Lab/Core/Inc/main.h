@@ -66,6 +66,9 @@ void Error_Handler(void);
 #define RENDER_TIME_GPIO_Port GPIOH
 #define FRAME_RATE_Pin GPIO_PIN_9
 #define FRAME_RATE_GPIO_Port GPIOI
+#define USER_BTN_Pin GPIO_PIN_13
+#define USER_BTN_GPIO_Port GPIOC
+#define USER_BTN_EXTI_IRQn EXTI15_10_IRQn
 #define LED2_Pin GPIO_PIN_2
 #define LED2_GPIO_Port GPIOG
 #define LCD_INT_Pin GPIO_PIN_2

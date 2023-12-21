@@ -27,6 +27,11 @@ public:
 
     virtual ~Screen2Presenter() {}
 
+    void swButtonHwLedToggle();
+
+    void swButtonSwLedToggle();
+
+    void userButtonPressed();
 private:
     Screen2Presenter();
 

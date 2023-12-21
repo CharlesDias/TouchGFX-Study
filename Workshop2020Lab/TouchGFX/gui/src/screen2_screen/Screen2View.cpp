@@ -14,3 +14,20 @@ void Screen2View::tearDownScreen()
 {
     Screen2ViewBase::tearDownScreen();
 }
+
+void Screen2View::toggleSwLed()
+{
+	if(SwLedOn.isVisible())
+	{
+		SwLedOn.setVisible(false);
+		SwLedOff.setVisible(true);
+	}
+	else
+	{
+		SwLedOn.setVisible(true);
+		SwLedOff.setVisible(false);
+	}
+
+	SwLedOn.invalidate();
+	SwLedOff.invalidate();
+}

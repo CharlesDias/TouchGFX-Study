@@ -16,6 +16,7 @@ public:
     void tick();
     void setScanJunctionTemp(bool scanEnabled);
     int getTempValue();
+    void toggleHwLed();
 protected:
     ModelListener* modelListener;
     int tickCounter;
