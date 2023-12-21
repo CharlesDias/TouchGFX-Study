@@ -67,10 +67,45 @@
             ]
           },
           {
+            "Type": "FlexButton",
+            "Name": "buttonToggleLanguage",
+            "X": 114,
+            "Y": 190,
+            "Width": 146,
+            "Height": 70,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 9,
+                "TextId": "__SingleUse_EKT0",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "button_large_released.png",
+                "ImagePressed": "button_large_pressed.png"
+              }
+            ]
+          },
+          {
             "Type": "ImageProgress",
             "Name": "temperatureBar",
-            "X": 100,
-            "Y": 70,
+            "X": 137,
+            "Y": 63,
             "Width": 280,
             "Height": 77,
             "FileNameProgress": "hor_therm_progress.png",
@@ -86,10 +121,10 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 132,
+            "Name": "textTemp",
+            "X": 143,
             "Y": 124,
-            "Width": 218,
+            "Width": 274,
             "Height": 24,
             "TextId": "__SingleUse_84I2",
             "TextRotation": "0",
@@ -112,6 +147,17 @@
               "ScreenTransitionType": "ScreenTransitionCover",
               "ScreenTransitionDirection": "East",
               "ActionComponent": "Screen2"
+            }
+          },
+          {
+            "InteractionName": "buttonToggleLanguage",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonToggleLanguage"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "presenter->toggleLanguage();"
             }
           }
         ]

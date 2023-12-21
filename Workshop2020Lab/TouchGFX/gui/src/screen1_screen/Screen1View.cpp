@@ -25,3 +25,14 @@ void Screen1View::setJunctionTempValue(int value)
 		temperatureBar.invalidate();
 	}
 }
+
+void Screen1View::setLanguage(LanguageId lang)
+{
+	/* Set new language */
+	Texts::setLanguage(lang);
+
+	/* Invalidate all widgets with text */
+	textTemp.invalidate();
+	buttonTransition.invalidate();
+	buttonToggleLanguage.invalidate();
+}

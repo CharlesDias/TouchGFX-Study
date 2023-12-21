@@ -2,30 +2,42 @@
 <TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.23.0">
   <Languages>
     <Language Id="GB" />
+    <Language Id="PT" />
   </Languages>
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_EKT0" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Alt.</Translation>
+        <Translation Language="PT">Alt.</Translation>
+      </Text>
       <Text Id="__SingleUse_WHL7" Alignment="Center" TypographyId="Small">
         <Translation Language="GB">Toggle Logical LED</Translation>
+        <Translation Language="PT">Alternar LED Lógico</Translation>
       </Text>
       <Text Id="__SingleUse_XH6S" Alignment="Center" TypographyId="Small">
         <Translation Language="GB">Toggle Physical LED</Translation>
+        <Translation Language="PT">Alternar LED Físico</Translation>
       </Text>
       <Text Id="__SingleUse_G4RF" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">SW</Translation>
+        <Translation Language="PT">SW</Translation>
       </Text>
       <Text Id="__SingleUse_F0IR" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">HW</Translation>
+        <Translation Language="PT">HW</Translation>
       </Text>
       <Text Id="__SingleUse_84I2" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Junction Temperature</Translation>
+        <Translation Language="GB">    Junction Temperature    </Translation>
+        <Translation Language="PT">Temperatura da Junção</Translation>
       </Text>
       <Text Id="__SingleUse_3N90" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Previous</Translation>
+        <Translation Language="PT">Anterior</Translation>
       </Text>
       <Text Id="__SingleUse_HS3R" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Next</Translation>
+        <Translation Language="PT">Próximo</Translation>
       </Text>
     </TextGroup>
   </Texts>

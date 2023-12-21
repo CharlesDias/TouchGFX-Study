@@ -27,6 +27,8 @@ public:
 
     virtual ~Screen1Presenter() {}
     virtual void newJunctionTempValue(int value);
+
+    void toggleLanguage();
 private:
     Screen1Presenter();
 
