@@ -9,10 +9,15 @@ Screen1Presenter::Screen1Presenter(Screen1View& v)
 
 void Screen1Presenter::activate()
 {
-
+    model->setScanJunctionTemp(true);
 }
 
 void Screen1Presenter::deactivate()
 {
 
+}
+
+void Screen1Presenter::newJunctionTempValue(int value)
+{
+    view.setJunctionTempValue(value);
 }

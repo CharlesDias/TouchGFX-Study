@@ -26,7 +26,7 @@ public:
     virtual void deactivate();
 
     virtual ~Screen1Presenter() {}
-
+    virtual void newJunctionTempValue(int value);
 private:
     Screen1Presenter();
 

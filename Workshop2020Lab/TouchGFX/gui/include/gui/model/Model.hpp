@@ -14,8 +14,12 @@ public:
     }
 
     void tick();
+    void setScanJunctionTemp(bool scanEnabled);
+    int getTempValue();
 protected:
     ModelListener* modelListener;
+    int tickCounter;
+    bool scanJunctionTemp;
 };
 
 #endif // MODEL_HPP

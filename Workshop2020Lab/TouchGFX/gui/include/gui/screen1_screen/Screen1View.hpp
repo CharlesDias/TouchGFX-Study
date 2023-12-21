@@ -11,7 +11,10 @@ public:
     virtual ~Screen1View() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    void setJunctionTempValue(int value);
+
 protected:
+    int lastTempValue;
 };
 
 #endif // SCREEN1VIEW_HPP

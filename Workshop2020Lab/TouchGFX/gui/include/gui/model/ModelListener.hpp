@@ -14,6 +14,8 @@ public:
     {
         model = m;
     }
+    
+    virtual void newJunctionTempValue(int value) {}
 protected:
     Model* model;
 };

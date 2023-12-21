@@ -20,9 +20,9 @@
 
 extern "C"
 {
-#include <main.h>
-#include <string.h>
-#include <stm32h7xx_hal.h>
+    #include <main.h>
+    #include <string.h>
+    #include <stm32h7xx_hal.h>
 
     uint32_t JPEG_Decode_DMA(JPEG_HandleTypeDef* hjpeg, uint8_t* input, uint32_t chunkSizeIn, uint8_t* output);
     uint32_t JPEG_OutputHandler(JPEG_HandleTypeDef* hjpeg);

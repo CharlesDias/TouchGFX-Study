@@ -65,6 +65,39 @@
                 "ImagePressed": "button_large_pressed.png"
               }
             ]
+          },
+          {
+            "Type": "ImageProgress",
+            "Name": "temperatureBar",
+            "X": 100,
+            "Y": 70,
+            "Width": 280,
+            "Height": 77,
+            "FileNameProgress": "hor_therm_progress.png",
+            "AnchorAtZero": true,
+            "Direction": "Right",
+            "FileNameBackground": "hor_therm_bg_scale.png",
+            "IndicatorPositionX": 18,
+            "IndicatorPositionY": 27,
+            "IndicatorPositionWidth": 244,
+            "IndicatorPositionHeight": 18,
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 100
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 132,
+            "Y": 124,
+            "Width": 218,
+            "Height": 24,
+            "TextId": "__SingleUse_84I2",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 200,
+              "Blue": 255
+            },
+            "AutoSize": true
           }
         ],
         "Interactions": [
